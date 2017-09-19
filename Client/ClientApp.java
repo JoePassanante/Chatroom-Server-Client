@@ -6,19 +6,6 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.util.Scanner;
 
-/*
- * Two screens - Server/Loggin Screen
- * Messaging screen
- * Server/Loggin Screen passes info to Messaging screen through Client App. 
- * 
- * 
- */
-
-/*
- * This Class will not only be the starting point of the program... but also act as a "holder" for the IP and Port info
- * as well as login information
- */
-
 public class ClientApp {
 	private String port;
 	private int portnum;
@@ -31,7 +18,7 @@ public class ClientApp {
 		// super("ClientApp");
 		 input = new Scanner(System.in);
 		 System.out.println("Press enter to use default values.");
-		 System.out.println("Please enter the IP Address/Domain name of server: ");
+		 System.out.println("Please enter the IP Address/Domain name of server(DEFAULT: localhost): ");
 		 IP = input.nextLine();
 		 if(IP.length()<=2)
 			 IP = "localhost";
